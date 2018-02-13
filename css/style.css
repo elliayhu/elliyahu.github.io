@@ -1,0 +1,188 @@
+html{
+  direction: rtl;
+  height: 100%;
+}
+body{
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+*{
+direction: rtl;
+}
+ 
+#mainDiv{
+  direction: ltr;
+  overflow: auto;
+}
+.selector-for-some-widget {
+    box-sizing: content-box;
+  }
+
+
+.top-background-transparent{
+  background: rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */
+  background: linear-gradient( rgba(2, 2, 2,0.9) 50%, rgba(20, 15, 15, 0.7), rgba(248, 246, 246, 0.00))
+  }
+
+.top-background {
+  background-color: #191918;
+}
+.red{
+  background-color: red
+}
+.blue{
+  background-color: blue;
+}
+.yellow{
+  background-color: yellow;
+}
+.top-font{
+  color: #A7893B;
+  font: bold;
+  font-size: 1.2rem; 
+}
+.top-gold{
+  color: #A7893B;
+  font-style: italic;
+}
+.top-center{
+  align-self: center;
+}
+.top-end{
+  align-self: flex-end;
+}
+
+.top-direction{
+direction: ltr;
+}
+
+.top-direction-r{
+  direction: rtl;
+  }
+
+.col-md-4.d-flex.flex-column.min-height{
+  min-height: 320px;
+}
+
+/*-----------------toggler------------------*/
+.custom-toggler .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(247,230,141,1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+/*----------------scrollbar-------------------*/
+.scrollbar
+{
+	float: left;
+	/*background: #F5F5F5;*/
+	overflow-y: auto;
+}
+
+#style-scrollbar::-webkit-scrollbar-track
+{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+	border-radius: 10px;
+	background-color: rgba(9, 9, 9, 0.7);
+}
+
+#style-scrollbar::-webkit-scrollbar
+{
+	width: 12px;
+	background-color:rgba(9, 9, 9, 0.7);
+}
+
+#style-scrollbar::-webkit-scrollbar-thumb
+{
+  border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+	background-color: white;
+}
+
+
+
+/*-------------------------*/
+.p-all-projects{
+  position: absolute;
+  left: 0px;
+  right: 0px;
+  background: rgba(9, 9, 9, 0.7);
+}
+.text-box-info
+ {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  color: white;
+  background: rgba(9, 9, 9, 0.7);
+  overflow-y: auto;
+  direction: ltr;
+  opacity:0.2;  
+  transition: 0.5s ease;  
+}
+
+.text-box-info:hover {
+  opacity:1;
+  transition: 0.5s ease;
+}
+
+.project-span-text{
+position: absolute;
+left: 0px;
+right: 0px;
+bottom: 0px;
+background: rgba(9, 9, 9, 0.7);
+color: #A7893B;
+font-size: 1.2em;
+}
+
+.make-span-big:hover span{
+ overflow: hidden;
+ top: 100%;
+  }
+/*-----------flex------------*/
+.flex-1{
+  flex: 1 0 0;
+}
+
+/*-------------font------------*/
+@font-face {
+ font-family: "Alef";
+ font-style: normal;
+ font-weight: 400;
+ src: local('Alef Regular'), local('Alef-Regular'), url(https://fonts.gstatic.com/s/alef/v9/YSq5FGaxu3aLqDeLnbayWg.woff2) format('woff2');
+ unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+@font-face {
+  font-family: 'Alef';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Alef Regular'), local('Alef-Regular'), url(https://fonts.gstatic.com/s/alef/v9/PgKMCGPCV9cpBC0J2OLAhg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: "Alef-Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: local('Alef Bold'), local('Alef-Bold'), url(https://fonts.gstatic.com/s/alef/v9/6FldS2NxdsYYh3OkPr4zA_Y6323mHUZFJMgTvxaG2iE.woff2) format('woff2');
+  unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F;
+}
+@font-face {
+  font-family: 'Alef-Bold';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Alef Bold'), local('Alef-Bold'), url(https://fonts.gstatic.com/s/alef/v9/a_b6i2iOdMAEMhttbuoj2g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2212, U+2215;
+}
+
+.customfont-bold { 
+  font-family: "Alef-Bold", Verdana, Tahoma;
+}
+
+.customfont { 
+  font-family: "Alef", Verdana, Tahoma;
+}
+
+p { 
+  font-family: "Alef", Verdana, Tahoma;
+}
