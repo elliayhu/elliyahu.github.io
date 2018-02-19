@@ -14,10 +14,12 @@ direction: rtl;
 
 .top-koteret{
 position: absolute;
-top: 50%;
-left: 50%;
-margin-top: -90px;
-margin-left: -284px;
+top: 0;
+bottom: 0;
+left:0;
+right: 0;
+margin: auto;
+max-width: 50%;
 }
 #mainDiv{
   direction: ltr;

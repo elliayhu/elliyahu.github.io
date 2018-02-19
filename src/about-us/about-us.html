@@ -1,0 +1,70 @@
+<template>
+    <require from="../head-page-new/head-page-new.html"></require>
+    <head-page-new></head-page-new>
+    <div class="container-fluid">
+    <div class="container-fluid w-100">
+        <div class="row mt-2">
+            <div class="col-11">
+               <h1 class="customfont-bold top-gold text-center mb-5" if.bind='hebrew'>${titleH1}</h1>
+               <h1 class="customfont-bold top-gold text-center mb-5" if.bind='!hebrew'>${titleH1E}</h1>
+            </div>
+            <div class="col-1">
+                <button type="button" class="rounded-circle btn btn-dark top-gold" click.delegate='languageChange()'>${buttonText}</button>
+            </div>
+        </div>
+    </div>
+    <div class="row mx-5 d-flex justify-content-center">
+        <div class="col-md-5 my-3" if.bind='hebrew'>
+           <h5 class="customfont-bold top-gold text-right">${title1H5}</h5>
+            <p class="top-gold text-right">${paragraph1}</p>
+           <h5 class="customfont-bold top-gold text-right">${title2H5}</h5>
+            <p class="top-gold text-right">${Paragraph2}</p>
+            <p class="top-gold text-right">${paragraph3}</p>
+           <h5 class="customfont-bold top-gold text-right">${title3H5}</h5>
+            <p class="top-gold text-right">${paragraph4}</p>
+            <p class="top-gold text-right">${paragraph5}</p>
+            <p class="top-gold text-right">${paragraph6}</p>
+            <p class="top-gold text-right">${paragraph7}</p>
+            <p class="top-gold text-right">${paragraph8}</p>
+        </div>
+        <div class="col-7 my-3">
+            <div class="row justify-content-center h-100">
+                <div repeat.for="item of logos" class="col-md-4 my-2 justify-content-center">
+                    <img src.bind="item.src" alt="Lights" class="d-block m-auto mw-100" style="">
+                </div>
+            </div>
+        </div>
+        <div class="col-md-5 my-3 top-direction" if.bind='!hebrew'>
+           <h5 class="top-direction-l customfont-bold top-gold">${title1H5E}</h5>
+            <p class="top-direction-l top-gold">${paragraph1E}</p>
+           <h5 class="top-direction-l customfont-bold top-gold">${title2H5E}</h5>
+            <p class="top-direction-l top-gold">${Paragraph2E}</p>
+            <p class="top-direction-l top-gold">${Paragraph2E2}</p>
+            <p class="top-direction-l top-gold">${paragraph3E}</p>
+           <h5 class="top-direction-l customfont-bold top-gold">${title3H5E}</h5>
+            <p class="top-direction-l top-gold">${paragraph4E}</p>
+            <p class="top-direction-l top-gold">${paragraph5E}</p>
+            <p class="top-direction-l top-gold">${paragraph6E}</p>
+            <p class="top-direction-l top-gold">${paragraph7E}</p>
+            <p class="top-direction-l top-gold">${paragraph8E}</p>
+            <p class="top-direction-l top-gold">${paragraph9E}</p>
+            <p class="top-direction-l top-gold">${paragraph10E1}</p>
+            <p class="top-direction-l top-gold">${paragraph10E2}</p>
+            <p class="top-direction-l top-gold">${paragraph10E3}</p>
+            <p class="top-direction-l top-gold">${paragraph10E4}</p>
+            <p class="top-direction-l top-gold">${paragraph11E}</p>
+            <p class="top-direction-l top-gold">${paragraph12E}</p>
+            <p class="top-direction-l top-gold">${paragraph13E}</p>
+            <p class="top-direction-l top-gold">${paragraph14E}</p>
+            <p class="top-direction-l top-gold">${paragraph15E}</p>
+            <p class="top-direction-l top-gold">${paragraph16E}</p>
+            <p class="top-direction-l top-gold">${paragraph17E}</p>
+            <p class="top-direction-l top-gold">${paragraph18E}</p>
+            <p class="top-direction-l top-gold">${paragraph19E}</p>
+            <p class="top-direction-l top-gold">${paragraph20E}</p>
+            <p class="top-direction-l top-gold">${paragraph21E}</p>
+            <p class="top-direction-l top-gold">${paragraph22E}</p>
+        </div>
+    </div>
+</div>
+</template>

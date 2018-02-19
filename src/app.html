@@ -1,0 +1,11 @@
+<template>
+    <require from="bootstrap/css/bootstrap.css"></require>
+    <require from="./main-page/main-carousel.html"></require>
+    <require from="./bottom-page/bottom-page.html"></require>
+    <require from="./contact-us/contact-us"></require>
+    <div id="mainDiv" class="h-100">
+        <router-view class="h-100"></router-view>
+        <bottom-page></bottom-page>
+    </div>
+    <contact-us></contact-us>
+</template>
